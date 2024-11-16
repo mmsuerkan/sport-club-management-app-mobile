@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
+    <ActionBar title="Basketball Players" />
+    
+    <GridLayout rows="auto, auto, *" class="p-4">
+        <!-- Add Player Form -->
+        <StackLayout row="0" class="form mb-4">
+            <TextField hint="Player Name" text="{{ playerName }}" class="input mb-2" />
+            <TextField hint="Position" text="{{ position }}" class="input mb-2" />
+            <Button text="Add Player" tap="{{ addPlayer }}" class="btn-primary mb-4" />
+        </StackLayout>
+
+        <!-- Status Label -->
+        <Label row="1" text="{{ status }}" class="text-center mb-2" textWrap="true" />
+
+        <!-- Players List -->
+        <ListView row="2" items="{{ players }}" itemTap="{{ onPlayerTap }}">
+            <ListView.itemTemplate>
+                <GridLayout columns="*, auto" class="p-2">
+                    <StackLayout col="0">
+                        <Label text="{{ name }}" class="font-bold" />
+                        <Label text="{{ position }}" class="text-gray-500" />
+                    </StackLayout>
+                    <Button col="1" text="Delete" tap="{{ $parent.deletePlayer }}" class="btn-danger" />
+                </GridLayout>
+            </ListView.itemTemplate>
+        </ListView>
+    </GridLayout>
+</Page>

@@ -1,0 +1,59 @@
+{
+
+  "project_info": {
+
+    "project_number": "249196940183",
+
+    "firebase_url": "https://basketbolmanagementapp-default-rtdb.firebaseio.com",
+
+    "project_id": "basketbolmanagementapp",
+
+    "storage_bucket": "basketbolmanagementapp.firebasestorage.app"
+
+  },
+
+  "client": [
+
+    {
+
+      "client_info": {
+
+        "mobilesdk_app_id": "1:249196940183:android:586669c5b1ae9c5dee92d2",
+
+        "android_client_info": {
+
+          "package_name": "com.sportclubmanagement.app"
+
+        }
+
+      },
+
+      "oauth_client": [],
+
+      "api_key": [
+
+        {
+
+          "current_key": "AIzaSyAk2p9-qJh4eXuuksN6zmeszr5OfHwyS-E"
+
+        }
+
+      ],
+
+      "services": {
+
+        "appinvite_service": {
+
+          "other_platform_oauth_client": []
+
+        }
+
+      }
+
+    }
+
+  ],
+
+  "configuration_version": "1"
+
+}
